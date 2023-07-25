@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SOLUTY TECNOLOGIA</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, rgb(0, 162, 255), black);
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: white;
+        }
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        button {
+            background-color: dodgerblue;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+        }
+        button:hover {
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+        img{
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img  src="logo.jpeg" alt="Logo de sua empresa">
+        <h1>LOGIN</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha">
+        <br><br>
+        <button type="submit">Enviar</button>
+        <form action="processar_login.php" method="POST"></form>
+    </div>
+</body>
+</html>
